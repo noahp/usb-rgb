@@ -6,8 +6,17 @@ See files under [hw](hw).
 * *TODO* schematic
 * *TODO* pcb / 3d render
 
+## Reference
+SAMD11 manual:
+>http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Datasheet.pdf
+
+Digikey mcu part: https://www.digikey.com/short/jwwn7f
+
 # Firmware
 See files under [fw](fw).
+
+Reference:
+>ASF mirror: https://github.com/avrxml/asf
 
 * *TODO* samd11d usb application
 
