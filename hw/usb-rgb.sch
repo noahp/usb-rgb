@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Regulator_Linear:MCP1700-3302E_SOT23 U2
-U 1 1 5BA6934A
-P 5400 1550
-F 0 "U2" H 5400 1792 50  0000 C CNN
-F 1 "MCP1700-3302E_SOT23" H 5400 1701 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5400 1775 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 5400 1550 50  0001 C CNN
-	1    5400 1550
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCU_Microchip_SAMD:SAMD11D14A-M U1
 U 1 1 5BA6A1AF
 P 5150 4150
@@ -42,7 +31,7 @@ U 1 1 5BA6A30E
 P 2650 2100
 F 0 "J2" H 2705 2567 50  0000 C CNN
 F 1 "USB_B_Micro" H 2705 2476 50  0000 C CNN
-F 2 "" H 2800 2050 50  0001 C CNN
+F 2 "kicadlib:usb_micro_b_smt" H 2800 2050 50  0001 C CNN
 F 3 "~" H 2800 2050 50  0001 C CNN
 	1    2650 2100
 	1    0    0    -1  
@@ -64,7 +53,7 @@ U 1 1 5BA6A54F
 P 5800 1800
 F 0 "C2" H 5915 1846 50  0000 L CNN
 F 1 "C" H 5915 1755 50  0000 L CNN
-F 2 "" H 5838 1650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5838 1650 50  0001 C CNN
 F 3 "~" H 5800 1800 50  0001 C CNN
 	1    5800 1800
 	1    0    0    -1  
@@ -157,7 +146,7 @@ U 1 1 5BA6AE28
 P 6650 3350
 F 0 "TP2" H 6708 3470 50  0000 L CNN
 F 1 "TestPoint" H 6708 3379 50  0000 L CNN
-F 2 "" H 6850 3350 50  0001 C CNN
+F 2 "kicadlib:TEST_0.100" H 6850 3350 50  0001 C CNN
 F 3 "~" H 6850 3350 50  0001 C CNN
 	1    6650 3350
 	1    0    0    -1  
@@ -187,7 +176,7 @@ U 1 1 5BA6B554
 P 6600 4750
 F 0 "R1" V 6393 4750 50  0000 C CNN
 F 1 "R" V 6484 4750 50  0000 C CNN
-F 2 "" V 6530 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6530 4750 50  0001 C CNN
 F 3 "~" H 6600 4750 50  0001 C CNN
 	1    6600 4750
 	0    1    1    0   
@@ -198,7 +187,7 @@ U 1 1 5BA6B6E6
 P 6600 4850
 F 0 "R2" V 6400 4850 50  0000 C CNN
 F 1 "R22" V 6500 4850 50  0000 C CNN
-F 2 "" V 6530 4850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6530 4850 50  0001 C CNN
 F 3 "~" H 6600 4850 50  0001 C CNN
 	1    6600 4850
 	0    -1   -1   0   
@@ -213,18 +202,18 @@ U 1 1 5BA6CB5A
 P 2300 4400
 F 0 "J1" H 2200 4850 50  0000 C CNN
 F 1 "Conn_01x05_Female" H 2200 4750 50  0000 C CNN
-F 2 "" H 2300 4400 50  0001 C CNN
+F 2 "kicadlib:SMD_JST_5_PIN_VERT" H 2300 4400 50  0001 C CNN
 F 3 "~" H 2300 4400 50  0001 C CNN
 	1    2300 4400
 	-1   0    0    -1  
 $EndComp
 Text Label 2500 4200 0    50   ~ 0
 vdd
-Text Label 2500 4300 0    50   ~ 0
+Text Label 2500 4500 0    50   ~ 0
 ~rst
 Text Label 2500 4400 0    50   ~ 0
 swclk
-Text Label 2500 4500 0    50   ~ 0
+Text Label 2500 4300 0    50   ~ 0
 swdio
 $Comp
 L power:GND #PWR01
@@ -240,7 +229,6 @@ $EndComp
 Text Notes 2050 4900 0    50   ~ 0
 swd debug header
 NoConn ~ 5650 3450
-NoConn ~ 5650 3550
 NoConn ~ 5650 3650
 NoConn ~ 5650 3850
 NoConn ~ 5650 3950
@@ -257,7 +245,7 @@ U 1 1 5BA6DD1C
 P 6700 3750
 F 0 "R3" V 6493 3750 50  0000 C CNN
 F 1 "R10" V 6584 3750 50  0000 C CNN
-F 2 "" V 6630 3750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6630 3750 50  0001 C CNN
 F 3 "~" H 6700 3750 50  0001 C CNN
 	1    6700 3750
 	0    1    1    0   
@@ -270,7 +258,7 @@ U 1 1 5BA6E22C
 P 5900 4400
 F 0 "TP1" H 5958 4520 50  0000 L CNN
 F 1 "TestPoint" H 5958 4429 50  0000 L CNN
-F 2 "" H 6100 4400 50  0001 C CNN
+F 2 "kicadlib:TEST_0.100" H 6100 4400 50  0001 C CNN
 F 3 "~" H 6100 4400 50  0001 C CNN
 	1    5900 4400
 	1    0    0    -1  
@@ -293,7 +281,7 @@ U 1 1 5BA6E9FD
 P 4100 1800
 F 0 "C1" H 4215 1846 50  0000 L CNN
 F 1 "C" H 4215 1755 50  0000 L CNN
-F 2 "" H 4138 1650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4138 1650 50  0001 C CNN
 F 3 "~" H 4100 1800 50  0001 C CNN
 	1    4100 1800
 	1    0    0    -1  
@@ -319,4 +307,16 @@ Text Notes 4300 2000 0    50   ~ 0
 nopop
 Text Notes 8100 3300 0    50   ~ 0
 rgb led out\nvin nominal 5v\ni/o works with 3.3v
+$Comp
+L Regulator_Linear:MCP1700-3302E_SOT23 U2
+U 1 1 5BA6934A
+P 5400 1550
+F 0 "U2" H 5400 1792 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 5400 1701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5400 1775 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 5400 1550 50  0001 C CNN
+	1    5400 1550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5650 3550
 $EndSCHEMATC
