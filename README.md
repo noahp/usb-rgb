@@ -28,6 +28,12 @@ SAMD11 is a little more appealing for:
 
 PIC16F1454 however doesn't require a 5v->3.3v regulator which is nice.
 
+### EFM32HG309F64G
+Another Cortex M0 with USB, this one's got an on-chip 5v->3.3v regulator and a ROM USB (CDC serial) bootloader which is appealing:
+>https://www.digikey.com/short/jnh91h
+
+>https://www.silabs.com/documents/public/data-sheets/efm32hg-datasheet.pdf
+
 # Firmware
 See files under [fw](fw).
 
